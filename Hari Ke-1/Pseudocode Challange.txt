@@ -1,0 +1,77 @@
+Soal No 1. Newton Second Law
+
+Algoritma
+1. Simpan `massa benda` dengan nilai 600.
+2. Simpan `percepatan benda` dengan nilai 2.
+3. Simpan `resultan gaya` dengan nilai berapapun.
+4. Hitung `resultan gaya` adalah `massa benda` dikali dengan `percepatan benda`.
+5. Setelah mendapat hasil perhitungan, isikan hasilnya ke dalam `massa benda`.
+6. Tampilkan nilai dari `resultan gaya`.
+
+Pseudocode
+STORE `massa benda` value with 600
+STORE `percepatan benda` value with 2
+STORE `resultan gaya` with any value
+ CALCULATE `massa benda` times `percepatan benda`
+  SET `resultan gaya` value with calculation result
+ DISPLAY `resultan gaya`
+
+Soal No 2. Tahun Kabisat
+
+Algoritma
+1. Simpan `tahun` dengan nilai berapapun.
+2. Isi `tahun` dengan value tahun yang ingin ditentukan.
+3. Jika `tahun` modulus 4 bernilai 0 dan `tahun` modulus 100 tidak bernilai 0, maka tampilkan hasil berupa "tahun kabisat". Jika tidak lanjut ke langkah 4.
+4. Jika `tahun` modulus 4 bernilai 0 dan `tahun` modulus 100 bernilai 0 dan `tahun` modulus 400 bernilai 0, maka tampilkan hasil berupa "tahun kabisat". Jika tidak lanjut ke langkah 5.
+5. Tampilkan hasil berupa "bukan tahun kabisat".
+
+Pseudocode
+STORE `tahun` with any value
+SET `tahun` value with year to be determined 
+ IF `tahun` mod 4 value equal 0 and `tahun` mod 100 value not equal 0
+  DISPLAY "tahun kabisat"
+ ELSE IF `tahun` mod 4 value equal 0 and `tahun` mod 100 value equal 0 and `tahun` mod 400 value equal 0
+  DISPLAY "tahun kabisat"
+ ELSE
+  DISPLAY "bukan tahun kabisat"
+
+Soal No 3. Laundry Day
+
+Algoritma
+1. Simpan `jumlah pakaian` dengan nilai 0.
+2. Ulangi langkah 3 selama `jumlah pakaian` masih dibawah 20. Jika `jumlah pakaian` sudah 20, lanjut ke langkah 4.
+3. Tambah `jumlah pakaian` dengan 1, agar semakin mendekati batas perulangan. Kembali ke langkah 2.
+4. Tampilkan hasil berupa "pakaian sudah masuk semua, silahkan nyalakan mesin cuci".
+
+Pseudocode
+STORE `jumlah pakaian` value with 0
+ WHILE `jumlah pakaian` lesser than 20
+  ADD `jumlah pakaian` by 1
+DISPLAY "pakaian sudah masuk semua, silahkan nyalakan mesin cuci"
+
+Soal No 4. Periksa Kuku
+
+Algoritma
+1. Simpan `jumlah murid` dengan nilai 0.
+2. Simpan `kuku pendek` dengan nilai benar atau salah yang bebas.
+3. Ulangi langkah 3 selama `jumlah murid` masih dibawah 40. Jika `jumlah murid` sudah 40, lanjut ke langkah 8.
+4. Tambah `jumlah murid` dengan 1, agar semakin mendekati batas perulangan.
+5. Isi `kuku pendek` dengan nilai benar atau salah.
+6. Jika `kuku pendek` bernilai benar, maka tampilkan hasil berupa "murid ke-`jumlah murid` mendapat pujian karena kukunya pendek". Jika tidak maka tampilkan hasil berupa "murid ke-`jumlah murid` mendapat hukuman karena kukunya panjang".
+7. Kembali ke langkah 3.
+8. Tampilkan hasil berupa "semua murid telah diperika"
+
+Pseudocode
+STORE `jumlah murid` value with 0
+STORE `kuku pendek` with any boolean type value
+ WHILE `jumlah murid` value lesser than 40
+  ADD `jumlah murid` by 1
+  SET `kuku pendek` with boolean value to be determined
+  IF `kuku pendek` boolean value equal true
+   DISPLAY "murid ke-`jumlah murid` mendapat pujian karena kukunya pendek"
+  ELSE
+   DISPLAY "murid ke-`jumlah murid` mendapat hukuman karena kukunya panjang"
+DISPLAY "semua murid telah diperika"
+
+
+
