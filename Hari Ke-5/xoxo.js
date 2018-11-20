@@ -1,17 +1,17 @@
 function xo(str) {
-    var a = str.length;
-    var x = 0;
-    var o = 0;
-    while (a >= 1){
-        if(str.charAt(a-1) === 'x'){
-        x ++;
+    var panjangkata = str.length;
+    var jumlahx = 0;
+    var jumlaho = 0;
+    while (panjangkata >= 1){
+        if(str.charAt(panjangkata-1) === 'x'){
+        jumlahx ++;
         }
         else {
-        o ++;
+        jumlaho ++;
         }
-    a --;
+    panjangkata --;
     }
-    if (x - o === 0){
+    if (jumlahx - jumlaho === 0){
         return true;
     }
     else {

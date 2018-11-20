@@ -1,11 +1,12 @@
 function konversiMenit(menit) {
-    var b;
-    if(((menit%60).toString()).length === 1){
-        b = '0' + menit%60;
-        return Math.ceil(menit/60) + ':' + b;
+    var gabungangka;
+    var panjangangka = ((menit%60).toString()).length;
+    if(panjangangka === 1){
+        gabungangka = '0' + menit%60;
+        return Math.floor(menit/60) + ':' + gabungangka;
     }
     else{
-        return Math.ceil(menit/60) + ':' + menit%60;
+        return Math.floor(menit/60) + ':' + menit%60;
     }
   }
   // TEST CASES

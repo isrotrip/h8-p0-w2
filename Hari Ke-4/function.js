@@ -15,8 +15,8 @@ console.log('--------------')
 console.log('Tugas 2');
  
  //Kode Function
- function calculateMultiply(a, b){
-    return a * b
+ function calculateMultiply(num1, num2){
+    return num1 * num2
     }
  
 
