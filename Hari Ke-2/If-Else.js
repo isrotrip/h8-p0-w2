@@ -1,5 +1,5 @@
 var nama = '';
-var peran = '';
+var peran = '';//isi peran dengan variabel string Ksatria, Tabib, atau Penyihir
 
 if (!nama) {
     console.log('Nama harus diisi!');
