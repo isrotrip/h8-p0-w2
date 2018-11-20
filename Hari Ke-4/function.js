@@ -1,21 +1,24 @@
 //TUGAS 1
+console.log('Tugas 1');
 
- /*Kode Function
+ //Kode Function
  function shoutOut(){
     return 'Halo Function!';
  }
- */
+ 
 
 console.log(shoutOut()) // Menampilkan "Halo Function!" di console
 
+//batas antar tugas
+console.log('--------------')
 //TUGAS 2
-
- /*
- Kode Function
+console.log('Tugas 2');
+ 
+ //Kode Function
  function calculateMultiply(a, b){
     return a * b
     }
- */
+ 
 
 var num1 = 5;
 var num2 = 6;
@@ -23,14 +26,16 @@ var num2 = 6;
 var hasilPerkalian = calculateMultiply(num1,num2);
 console.log(hasilPerkalian); // Menampilkan angka 30
 
+//batas antar tugas
+console.log('--------------');
 // TUGAS 3
+console.log('Tugas 3');
 
-/*
- Kode Function
+ //Kode Function
  function processSentence(nama, umur, alamat, hobi){
     return 'Nama saya ' + nama + ', umur saya ' + umur + 'tahun, alamat saya di ' + alamat + ', dan saya punya hobby yaitu ' + hobi + '!';
  }
-*/
+
 
 var name = "Agus";
 var age = 30;
