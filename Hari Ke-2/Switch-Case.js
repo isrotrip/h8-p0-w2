@@ -46,10 +46,13 @@ switch(bulan){
     Pbulan = 'Bulan yang Anda masukan salah';
     break;
 }
-if(tanggal === 'tanggal yang Anda masukan salah' || tanggal > 31 || tanggal <= 0){
+if (Pbulan ===  'Bulan yang Anda masukan salah'){
+    console.log ('Maaf parameter Bulan yang Anda masukkan kurang sesuai');
+}
+else if(tanggal > 31 || tanggal <= 0){
     console.log ('Maaf parameter Tanggal yang Anda masukkan kurang sesuai');
 }
-else if(Tahun === 'Tahun yang Anda masukan salah' || tahun > 2200 || tahun < 1900){
+else if(tahun > 2200 || tahun < 1900){
     console.log ('Maaf parameter Tahun yang Anda masukkan kurang sesuai');
 }
 else {
