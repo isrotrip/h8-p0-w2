@@ -2,7 +2,7 @@ function balikKata(kata) {
     var panjangkata = kata.length;
     var gabungkata = '';
     while (panjangkata >= 1) {
-        gabungkata = gabungkata + kata.charAt(panjangkata-1);
+        gabungkata = gabungkata + kata[panjangkata-1];
         panjangkata --;
     }
     return gabungkata;
