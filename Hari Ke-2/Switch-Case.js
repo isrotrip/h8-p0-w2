@@ -1,7 +1,7 @@
 var tanggal; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
 var bulan; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var tahun; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
-var Pbulan = '';
+var Pbulan, Ptanggal, Ptahun = '';
 tanggal = 1;
 bulan = 1;
 tahun = 1900;
@@ -43,18 +43,36 @@ switch(bulan){
     Pbulan = 'Desember';
     break;
     default:
-    Pbulan = 'Bulan yang Anda masukan salah';
+    Pbulan = 'salah';
     break;
 }
-if (Pbulan ===  'Bulan yang Anda masukan salah'){
-    console.log ('Maaf parameter Bulan yang Anda masukkan kurang sesuai');
+switch(true){
+    case tanggal >= 1 && tanggal <= 31:
+    Ptanggal = tanggal;
+    break;
+    default:
+    Ptanggal = 'salah';
+    break;
 }
-else if(tanggal > 31 || tanggal <= 0){
-    console.log ('Maaf parameter Tanggal yang Anda masukkan kurang sesuai');
+switch(true){
+    case tahun >= 1900 && tahun <= 2200:
+    Ptahun = tahun;
+    break;
+    default: 
+    Ptahun = ('salah');
+    break;
 }
-else if(tahun > 2200 || tahun < 1900){
-    console.log ('Maaf parameter Tahun yang Anda masukkan kurang sesuai');
-}
-else {
-    console.log(tanggal, Pbulan, tahun);
+switch(true){
+    case Ptanggal === 'salah':
+    console.log('Tanggal harus dalam range 1-31');
+    break;
+    case Pbulan === 'salah':
+    console.log('Bulan harus dalam range 1-12');
+    break;
+    case Ptahun === 'salah':
+    console.log('Tahun harus dalam range 1900-2200');
+    break;
+    default:
+    console.log(Ptanggal, Pbulan, Ptahun);
+    break;
 }
