@@ -5,74 +5,74 @@ var Pbulan, Ptanggal, Ptahun = '';
 tanggal = 1;
 bulan = 1;
 tahun = 1900;
-switch(bulan){
+switch (bulan) {
     case 1:
-    Pbulan = 'Januari';
-    break;
+    	Pbulan = 'Januari';
+    	break;
     case 2:
-    Pbulan = 'Februari';
-    break;
+    	Pbulan = 'Februari';
+    	break;
     case 3:
-    Pbulan = 'Maret';
-    break;
+    	Pbulan = 'Maret';
+    	break;
     case 4:
-    Pbulan = 'April';
-    break;
+    	Pbulan = 'April';
+    	break;
     case 5:
-    Pbulan = 'Mei';
-    break;
+    	Pbulan = 'Mei';
+    	break;
     case 6:
-    Pbulan = 'Juni';
-    break;
+    	Pbulan = 'Juni';
+    	break;
     case 7:
-    Pbulan = 'Juli';
-    break;
+    	Pbulan = 'Juli';
+    	break;
     case 8:
-    Pbulan = 'Agustus';
-    break;
+    	Pbulan = 'Agustus';
+    	break;
     case 9:
-    Pbulan = 'September';
-    break;
+    	Pbulan = 'September';
+    	break;
     case 10:
-    Pbulan = 'Oktober';
-    break;
+    	Pbulan = 'Oktober';
+    	break;
     case 11:
-    Pbulan = 'November';
-    break;
+    	Pbulan = 'November';
+    	break;
     case 12:
-    Pbulan = 'Desember';
-    break;
+    	Pbulan = 'Desember';
+    	break;
     default:
-    Pbulan = 'salah';
-    break;
+    	Pbulan = 'salah';
+    	break;
 }
-switch(true){
+switch (true) {
     case tanggal >= 1 && tanggal <= 31:
-    Ptanggal = tanggal;
-    break;
+    	Ptanggal = tanggal;
+    	break;
     default:
-    Ptanggal = 'salah';
-    break;
+    	Ptanggal = 'salah';
+    	break;
 }
-switch(true){
+switch (true) {
     case tahun >= 1900 && tahun <= 2200:
-    Ptahun = tahun;
-    break;
+    	Ptahun = tahun;
+    	break;
     default: 
-    Ptahun = ('salah');
-    break;
+    	Ptahun = ('salah');
+    	break;
 }
-switch(true){
+switch (true) {
     case Ptanggal === 'salah':
-    console.log('Tanggal harus dalam range 1-31');
-    break;
+    	console.log('Tanggal harus dalam range 1-31');
+    	break;
     case Pbulan === 'salah':
-    console.log('Bulan harus dalam range 1-12');
-    break;
+    	console.log('Bulan harus dalam range 1-12');
+    	break;
     case Ptahun === 'salah':
-    console.log('Tahun harus dalam range 1900-2200');
-    break;
+    	console.log('Tahun harus dalam range 1900-2200');
+    	break;
     default:
-    console.log(Ptanggal, Pbulan, Ptahun);
-    break;
-}
+    	console.log(Ptanggal, Pbulan, Ptahun);
+    	break;
+} 
