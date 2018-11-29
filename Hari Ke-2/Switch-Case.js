@@ -8,71 +8,71 @@ tahun = 1900;
 switch (bulan) {
     case 1:
     	Pbulan = 'Januari';
-    	break;
+    break;
     case 2:
     	Pbulan = 'Februari';
-    	break;
+    break;
     case 3:
     	Pbulan = 'Maret';
-    	break;
+    break;
     case 4:
     	Pbulan = 'April';
-    	break;
+    break;
     case 5:
     	Pbulan = 'Mei';
-    	break;
+    break;
     case 6:
     	Pbulan = 'Juni';
-    	break;
+    break;
     case 7:
     	Pbulan = 'Juli';
-    	break;
+    break;
     case 8:
     	Pbulan = 'Agustus';
-    	break;
+    break;
     case 9:
     	Pbulan = 'September';
-    	break;
+    break;
     case 10:
     	Pbulan = 'Oktober';
-    	break;
+    break;
     case 11:
     	Pbulan = 'November';
-    	break;
+    break;
     case 12:
     	Pbulan = 'Desember';
-    	break;
+    break;
     default:
     	Pbulan = 'salah';
-    	break;
+    break;
 }
 switch (true) {
     case tanggal >= 1 && tanggal <= 31:
     	Ptanggal = tanggal;
-    	break;
+    break;
     default:
     	Ptanggal = 'salah';
-    	break;
+    break;
 }
 switch (true) {
     case tahun >= 1900 && tahun <= 2200:
     	Ptahun = tahun;
-    	break;
+    break;
     default: 
     	Ptahun = ('salah');
-    	break;
+    break;
 }
 switch (true) {
     case Ptanggal === 'salah':
     	console.log('Tanggal harus dalam range 1-31');
-    	break;
+    break;
     case Pbulan === 'salah':
     	console.log('Bulan harus dalam range 1-12');
-    	break;
+    break;
     case Ptahun === 'salah':
     	console.log('Tahun harus dalam range 1900-2200');
-    	break;
+    break;
     default:
     	console.log(Ptanggal, Pbulan, Ptahun);
-    	break;
+    break;
 } 
